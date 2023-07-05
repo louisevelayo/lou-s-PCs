@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 // Defines the types of the React props. provides type safety.
 interface BrandLinkProps {
@@ -6,9 +7,9 @@ interface BrandLinkProps {
 }
 
 const BrandLink: React.FC<BrandLinkProps> = ({ classes }) => (
-  <a className={`text-2xl font-krona ${classes}`} href="/">
+  <Link className={`text-2xl font-krona ${classes}`} to="/">
     Lou's PCs
-  </a>
+  </Link>
 );
 
 export default BrandLink;

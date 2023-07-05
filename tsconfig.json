@@ -20,6 +20,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"],
+  "include": ["src", "src/components/Navbar", "src/components/Navbar", "src/components/Navbar"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

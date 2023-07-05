@@ -1,13 +1,15 @@
 import React, { Component } from "react";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 export default class Main extends Component {
   render() {
     return (
-      <div>
+      <>
         <Navbar />
-        <p>Main</p>
-      </div>
+        <p className="container mx-auto">Main</p>
+        <Footer />
+      </>
     );
   }
 }

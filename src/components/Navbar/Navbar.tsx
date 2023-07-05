@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 import BrandLink from "../Brandlink";
+import Navlinks from "../Navlinks";
 
 export default class Navbar extends Component {
   render() {
@@ -10,30 +11,7 @@ export default class Navbar extends Component {
         <BrandLink classes="text-black" />
 
         <div className="flex capitalize">
-          <NavLink
-            to="/home"
-            className={({ isActive }) =>
-              isActive ? "text-sm mr-8 text-green" : "text-sm mr-8 text-black"
-            }
-          >
-            Home
-          </NavLink>
-          <NavLink
-            to="/laptops"
-            className={({ isActive }) =>
-              isActive ? "text-sm mr-8 text-green" : "text-sm mr-8 text-black"
-            }
-          >
-            Laptops
-          </NavLink>
-          <NavLink
-            to="/smartphones"
-            className={({ isActive }) =>
-              isActive ? " text-sm mr-8 text-green" : "text-sm mr-8 text-black"
-            }
-          >
-            Smartphones
-          </NavLink>
+          <Navlinks />
         </div>
 
         {/* ICONS */}

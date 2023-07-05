@@ -14,10 +14,15 @@ export default class Navbar extends Component {
         <BrandLink classes="text-black" />
 
         <div className="flex capitalize">
-          <Navlinks />
+          <Navlinks
+            links={[
+              { path: "/", name: "Home" },
+              { path: "/laptops", name: "Laptops" },
+              { path: "/smartphones", name: "Smartphones" },
+            ]}
+          />
         </div>
 
-        {/* ICONS */}
         <div className="flex">
           <ShoppingCartIcon />
           <SearchIcon />
